@@ -280,7 +280,7 @@ Returns C<undef> if there is no parent namespace
 
 sub parent {
     my $self = shift;
-    my $parent = $self->parent_namespace;
+    my $parent = $self->parent_namespace // return;
     return $self->new($parent);
 }
 

@@ -59,4 +59,7 @@ is_deeply $ST_abc => {
 
 is_deeply $ST_abc->{def} => $ST_def;
 
+my $ST_xyz = Tie::Symbol->new('xyz');
+is_deeply $ST_xyz->tree => {};
+
 done_testing;

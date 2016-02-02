@@ -21,7 +21,7 @@ use warnings FATAL => 'all';
 use Test::Most qw(!code);
 use Tie::Symbol;
 
-#plan tests => 6;
+plan tests => 15;
 
 my $ST_abc = Tie::Symbol->new('abc');
 my $ST_def = Tie::Symbol->new('abc::def');
